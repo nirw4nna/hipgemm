@@ -1,5 +1,9 @@
 #pragma once
 
+// 4-Wave interleave GEMM kernel for AMD GPUs (CDNA4).
+// The code is derived from HipKittens's FP8_4Wave matmul_device.
+// Source: https://github.com/HazyResearch/HipKittens/blob/7782744ba1fd259a377a99e2ea8f71384cc80e55/kernels/gemm/fp8fp32/FP8_4wave/4_wave.cu#L1
+
 #include <bit>
 #include <cstdint>
 #include <hip/hip_bfloat16.h>
